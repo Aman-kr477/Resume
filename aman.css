@@ -1,0 +1,343 @@
+*{
+  color:white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --primary-color:rgb(123, 149, 80);
+}
+body {
+background-color:	rgb(14,22,27);
+
+}
+.container{
+  display: flex;
+ 
+}
+/* here left container css */
+.left-container{
+  float: left;
+ 
+  width:  20%;
+  border-right:4px solid rgb(12,46,61);
+  text-align: center;
+  
+}
+/* .left-container:hover{
+
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+.left-first-section{
+ 
+  
+  background-color: rgb(12,46,61);
+  padding: 34px;
+  line-height:1.5;
+}
+.left-first-section .profile-picture img{
+  display: block;
+  width: 70%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom:8px;
+}
+.left-second-section{
+  padding: 20px;
+  margin-top:30px;
+  line-height:2.5;
+}
+.left-second-section ul{
+  list-style: none;
+ 
+}
+.left-second-section >.skills> ul >li:hover{
+  background-color: rgb(12,46,61);
+}
+.skills ul{
+  counter-reset: chapter-counter;
+ 
+}
+.skills ul li a{
+  text-decoration: none;
+}
+.skills ul li::before{
+  content: counter(chapter-counter) ".0 ";
+  counter-increment: chapter-counter;
+}
+.social-media-icon{
+  margin-top: 80px;
+  
+}
+.social-media-icon ul li{
+  line-height: 3;
+}
+.mail:hover::after{
+  content: attr(data-caption);
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:rgb(25, 160, 209); bottom:20px; top:20px;}
+
+  75%  {background-color:chartreuse; bottom:20px; top:0px;}
+  100%   {background-color:red; left:0px; top:0px;}
+
+}
+
+/* HERE right container starts  */
+.right-container{
+  width: 80%;
+  
+  margin: 80px 0 0 118px;
+}
+
+.heading-section>div:nth-child(2){
+  font-size: 2.6em;
+  font-weight: 700;
+}
+.heading-section>div{
+line-height: 1.5;
+margin-left: 18px;
+}
+.work-section{
+  margin-top: 70px;
+}
+.work-heading{
+  font-size: 2em;
+  font-weight: 700;
+  margin-left: 18px;
+}
+.work-body{
+  display: flex;
+  margin-top: 20px;
+  border-radius: 6px;
+ 
+}
+.task-image:hover,.task-description:hover{
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+@keyframes example {
+  0%   {background-color:cornflowerblue; left:0px; top:0px;}
+  25%  {background-color:var(--primary-color); bottom:20px; top:20px;}
+
+  75%  {background-color:chartreuse; bottom:20px; top:0px;}
+  100%   {background-color:cornflowerblue; left:0px; top:0px;}
+
+
+}
+
+
+.task-image{
+  width: 20%;
+  background-color: rgb(8,31,44);
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+
+}
+.task-image img{
+  display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+.task-description{
+  width: 50%;
+  line-height: 1.5;
+  background-color: rgb(12,46,61);
+  padding: 24px;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+.task-description a{
+  color:rgb(215, 215, 107);
+  text-decoration: none;
+}
+
+.writing-section{
+  margin-top: 60px;
+  margin-left: 18px;
+}
+.writing-body{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(150px,30%));
+  height: 300px;
+  grid-gap:44px;
+position: relative;
+margin-bottom: 46px;
+
+}
+.writing-body-first,.writing-body-second{
+  margin-top: 24px;
+  background-color: rgb(12,46,61);
+    padding: 31px;
+    border-radius: 40px;
+}
+.writing-body-first:hover,.writing-body-second:hover{
+   
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+@keyframes example {
+  0%   {background-color:cornflowerblue; left:0px; top:0px;}
+  25%  {background-color:var(--primary-color); bottom:20px; top:20px;}
+
+  75%  {background-color:chartreuse; bottom:20px; top:0px;}
+  100%   {background-color:cornflowerblue; left:0px; top:0px;}
+
+
+
+}
+
+.writing-box-heading img{
+  display: block;
+    width: 100%;
+    
+    text-align: center;
+    border-radius: 30px;
+}
+.writing-box-body{
+  margin-top: 24px;
+  margin-left: 14px;
+  line-height: 1.5;
+}
+.btn{
+  position: relative;
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writing-section-view-btn{
+  background-color: rgb(14, 22, 27);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 40px ;
+
+}
+
+
+.booking-section{
+  margin-top: 100px;
+  width: 50%;
+  line-height: 1.5;
+}
+.booking-section p{
+  font-size: 18px;
+}
+.booking-section>h3,.booking-section>p{
+  margin-left: 22px;
+}
+.booking-btn {
+  position: relative;
+  width: 132%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booking-section-btn{
+  background-color: rgb(14, 22, 27);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 22px ;
+
+}
+footer{
+  margin:100px 0 18px 33px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  
+  justify-content:center;
+
+}
+footer ul li{
+  margin: 0 10px; 
+}
+footer>h3{
+  margin-bottom: 10px;
+  font-weight: 700;
+ 
+}
+footer>h3,footer>ul>li>a{
+  color: var(--primary-color);
+
+}
+.phone-number:hover::after{
+content: attr(data-caption);
+position: relative;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: 3;
+}
+
+@keyframes example {
+0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:rgb(25, 160, 209); bottom:20px; top:20px;}
+
+75%  {background-color:chartreuse; bottom:20px; top:0px;}
+100%   {background-color:red; left:0px; top:0px;}
+
+
+}
+/* Add media queries for different screen sizes */
+@media  screen and (max-width:1210px) {
+  .right-container .task-image {
+    width: 46%;
+  }
+}
+@media screen and  (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-container, .right-container {
+    width: 100%;
+  }
+ .left-container{
+  float:none;
+
+ }
+ .right-container{
+  margin-left: 0;
+  padding: 10px;
+ }
+ .task-image {
+  width: 44%;
+}
+}
+
